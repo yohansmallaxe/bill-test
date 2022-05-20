@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:sanctum')->group(function(){
+    Route::get('bills',[\App\Http\Controllers\Api\BillController::class,'index']);
+    Route::post('bill',[\App\Http\Controllers\Api\BillController::class,'bill']);
+    Route::put('bill/{bill}',[\App\Http\Controllers\Api\BillController::class,'edit']);
 });
 Route::post('register',[\App\Http\Controllers\Api\AuthController::class,'register']);
-Route::post('bill',[\App\Http\Controllers\Api\AuthController::class,'bill']);
