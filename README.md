@@ -22,7 +22,7 @@ requests.Pass this bearer token with all other routes.Otherwise throw an error,s
 
 
 
-3.GET :api/bills Show all the bills for added units.
+3.GET :api/bills .Show all the bills for added units.
 
 
 
