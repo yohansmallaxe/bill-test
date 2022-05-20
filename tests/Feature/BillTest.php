@@ -30,7 +30,7 @@ class BillTest extends TestCase
     {
 
         $this->user->bills()->create(['units' => 200, 'bill' => "1,400.00"]);
-        $response = $this->actingAs($this->user)->put('api/bill/2', ['units' => 80]);
+        $response = $this->actingAs($this->user)->put('api/bill/1', ['units' => 80]);
         $response->assertStatus(200);
         $response->assertExactJson(['used units' => 80, 'Bill' => "200.00"]);
     }
