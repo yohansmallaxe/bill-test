@@ -13,7 +13,6 @@
 # Routes
 
 1.POST :api/register ,parameters('name,email,password').Will register a user and provide a bearer token to make auth
-
 requests.Pass this bearer token with all other routes.Otherwise throw an error,saying unauthenticated.
 
 
