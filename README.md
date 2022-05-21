@@ -4,6 +4,8 @@
 
 *Copy ".env.example" to ".env"(provide the correct database credentials).
 
+*run php artisan key:generate
+
 *run composer install.
 
 *run php artisan migrate.
