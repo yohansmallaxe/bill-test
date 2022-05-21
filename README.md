@@ -32,3 +32,10 @@ requests.Pass this bearer token with all other routes.Otherwise throw an error,s
 *Test coverage also available.Please run php artisan test to run test cases. 
 
 *Sandbox link( https://phpsandbox.io/e/x/ser2n?layout=EditorPreview&defaultPath=%2F&theme=dark&showExplorer=no&openedFiles= )
+
+#Used Technoloy
+
+1.Laravel v 9.13
+2Laravel/sanctum (Token based authentication)
+
+## Prefer to test with Api testing tool.such as  Postman.(To authenticate, need to send a bearer token which will provided once registered in the system)
