@@ -29,9 +29,9 @@ requests.Pass this bearer token with all other routes.Otherwise throw an error,s
 
 4.PUT api/bill/{bill_id} ,parameters:('units'). Update the bill for given bill id
 
-*Test coverage also available.Please run php artisan test to run test cases. 
+*Test coverage also available.Please run php artisan test to run test cases.(If you wish to use sqlite as test environment database,create a file named as "database.sqlite" under the database directory) 
 
-*Sandbox link( https://phpsandbox.io/n/hidden-dawn-bmkr-27bgj?files=%2Ftests%2FFeature%2FBillTest.php )
+*Sandbox link(  https://phpsandbox.io/e/x/senfr?layout=EditorPreview&defaultPath=%2F&theme=dark&showExplorer=no&openedFiles=  )
 
 #Used Technoloy
 
