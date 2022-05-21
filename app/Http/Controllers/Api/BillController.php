@@ -32,7 +32,7 @@ class BillController extends Controller
     {
         $price = $billService->calculateBill($request->units);
 
-       // auth()->user()->bills()->create(['units' => $request->units, 'bill' => $price]);
+        auth()->user()->bills()->create(['units' => $request->units, 'bill' => $price]);
 
         return response()->json(['used units' => $request->units, 'Bill' => $price]);
     }
