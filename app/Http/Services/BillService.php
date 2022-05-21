@@ -34,13 +34,13 @@ class BillService implements BillServiceInterface {
                 $units80_price = ($unit * 2.50);
             }
             if ($unit > 80 && $unit <= 280) {
-                $units80_280_price = ($unit * 6.00);
+                $units80_280_price = (($unit-80) * 6.00);
             }
             if ($unit > 280 && $unit <= 480) {
-                $units280_480_price = ($unit * 7.20);
+                $units280_480_price = (($unit-280) * 7.20);
             }
             if ($unit > 480) {
-                $units480_up_price = ($unit * 8.50);
+                $units480_up_price = (($unit-480) * 8.50);
             }
 
         }
